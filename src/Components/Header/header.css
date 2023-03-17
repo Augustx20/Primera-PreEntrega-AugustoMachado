@@ -1,0 +1,40 @@
+.header {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+.header > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.header > div:first-child{
+    margin-right: 20px;
+}
+
+.TituloHeader{
+    font-size: 4.5vh;
+    color:#DE84FA ;
+    word-spacing: 1.2vh;
+    letter-spacing: 0.4vh;
+    text-align: center;
+}
+
+.ListaP {
+    color:#DE84FA ;
+    font-size: 2.4vh;
+    padding: 10px;
+    letter-spacing: 0.4vh;
+    text-align: justify;
+    font: bold;
+}
+
+.DivLista > li {
+    list-style: decimal;
+    font-size: 1.8vh;
+    text-align: justify;
+    color:#b656a3 ;
+    font: bolder;
+
+}

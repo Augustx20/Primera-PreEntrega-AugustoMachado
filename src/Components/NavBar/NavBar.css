@@ -1,0 +1,21 @@
+.Navigation{
+    display:  flex;
+    background: #AA77FF;
+    min-height: 5vh;
+    width: 100%;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:  100%;
+    list-style-type: none;
+    
+}
+ 
+
+a {
+    text-decoration: none;
+    color: white ;
+    letter-spacing: 0.1vh;
+}
