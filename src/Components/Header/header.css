@@ -7,10 +7,12 @@
 .header > div {
     width: 50%;
     padding: 10px;
+
 }
 
 .header > div:first-child{
     margin-right: 20px;
+    margin-top: 5vh;
 }
 
 .TituloHeader{

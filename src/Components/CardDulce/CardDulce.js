@@ -7,25 +7,25 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const CardUser = ({img, name, description}) => {
   return (
-    <Card sx={{ maxWidth: 345 }} >
+    <Card sx={{ maxWidth: 400 }} >
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image= "logo.png"
+          height="330"
+          image= {img} sx={{width: 400}}
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" color={"#DE84FA"}>
             {name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="black">
            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" >
         Leer Mas
         </Button>
       </CardActions>
