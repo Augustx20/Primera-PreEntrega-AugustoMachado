@@ -1,8 +1,7 @@
 import React from 'react'
 import "./NavBar.css"
-import Shop from '../Shop/Shop'
 
-export const NavBar = () => {
+export function NavBar ({children})  {
   return (
  <nav className='Navigation'>
     <ul >
@@ -19,7 +18,7 @@ export const NavBar = () => {
             <a href='//' >Nosotros</a>
         </li>
         <li className='List-ul'>
-            <Shop/>
+            {children}
         </li>
     </ul>
  </nav>

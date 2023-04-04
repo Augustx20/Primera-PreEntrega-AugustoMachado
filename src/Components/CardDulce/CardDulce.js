@@ -5,16 +5,20 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
+
 const CardUser = ({img, name, description}) => {
+
+
   return (
     <Card sx={{ maxWidth: 400 }} >
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="330"
-          image= {img} sx={{width: 400}}
-          alt="green iguana"
-        />
+      <CardMedia
+  component="img"
+  height="330"
+  image={img} // aquí img ya es una cadena con la ruta de la imagen
+  sx={{ width: 400 }}
+  alt="green iguana"
+/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color={"#DE84FA"}>
             {name}
@@ -26,7 +30,7 @@ const CardUser = ({img, name, description}) => {
       </CardActionArea>
       <CardActions>
         <Button size="small" >
-        Leer Mas
+        Leer mas
         </Button>
       </CardActions>
     </Card>
