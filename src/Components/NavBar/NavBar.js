@@ -1,25 +1,16 @@
 import React from 'react'
 import "./NavBar.css"
 
+import { Link } from 'react-router-dom'
+
 export function NavBar ({children})  {
   return (
  <nav className='Navigation'>
     <ul >
-        <li>
-        <a href='//'> Inicio</a>
-        </li>
-        <li className='List-ul'>
-            <a href='//'>Recetas</a>
-        </li>
-        <li className='List-ul'>
-            <a href='//'>Galeria</a>
-        </li>
-        <li className='List-ul'>
-            <a href='//' >Nosotros</a>
-        </li>
-        <li className='List-ul'>
-            {children}
-        </li>
+        <Link className='List-ul' to="/">Home</Link>
+        <Link className='List-ul' to="/Contact">Contact</Link>
+        <Link className='List-ul' to="/Galery">Galery</Link>
+        <Link className='List-ul'>{children}</Link>
     </ul>
  </nav>
   )
